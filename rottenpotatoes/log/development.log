@@ -879,3 +879,45 @@ Migrating to AddDirectorField (20151126204638)
   [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (7.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151126204638')
   [1m[36m (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
+
+
+Started GET "/assets/rails.png" for 191.180.35.234 at 2015-11-26 23:50:09 +0000
+
+
+Started GET "/movies" for 191.180.35.234 at 2015-11-26 23:50:11 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (47.4ms)
+Completed 200 OK in 268ms (Views: 201.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 191.180.35.234 at 2015-11-26 23:50:12 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 191.180.35.234 at 2015-11-26 23:50:12 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 191.180.35.234 at 2015-11-26 23:50:12 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 191.180.35.234 at 2015-11-26 23:50:12 +0000
+
+
+Started GET "/movies/1" for 191.180.35.234 at 2015-11-26 23:50:21 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 35ms (Views: 26.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 191.180.35.234 at 2015-11-26 23:50:22 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 191.180.35.234 at 2015-11-26 23:50:22 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 191.180.35.234 at 2015-11-26 23:50:22 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 191.180.35.234 at 2015-11-26 23:50:22 +0000
