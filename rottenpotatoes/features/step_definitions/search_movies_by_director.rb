@@ -5,6 +5,8 @@ Given(/^the following movies exist:$/) do |table|
   end
 end
 
+
 Then(/^the director of "(.*?)" should be "(.*?)"$/) do |arg1, arg2|
-  pending # express the regexp above with the code you wish you had
+  director_li = page.all('ul li:last-child').map(&:text)
+  director_li.should have_content("xurumelas")
 end
